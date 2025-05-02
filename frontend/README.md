@@ -1,25 +1,37 @@
 # 🔍 AI Visual Search Engine
 
-This is a full-stack AI-powered image similarity search tool.
+An AI-powered full-stack image search tool that uses a deep neural network to find and return visually similar images from the CIFAR-100 dataset.
 
-### 💡 Features
-- Upload any image
-- Extract features using ResNet18 (PyTorch)
-- Compare with CIFAR-100 dataset
-- View top-5 visually similar images
-- React + Flask architecture
+![screenshot](preview.png)
 
-### 🛠 Tech Stack
-- React (frontend)
-- Flask + PyTorch (backend)
-- ResNet18 from torchvision
-- CIFAR-100 dataset
+---
 
-### 🚀 How to Run
+## 🚀 Features
+
+- Upload an image from your computer
+- Extracts features using **ResNet18**
+- Compares against the **CIFAR-100** dataset
+- Returns **top 5 visually similar images**
+- Built with **React (frontend)** and **Flask + PyTorch (backend)**
+
+---
+
+## 🛠 Tech Stack
+
+- 💻 **Frontend**: React, JavaScript, JSX, CSS
+- 🔥 **Backend**: Python, Flask, TorchVision, NumPy
+- 📦 **Model**: ResNet18 (pretrained on ImageNet)
+- 🖼 Dataset: CIFAR-100 (100 labeled classes)
+
+---
+
+## 🧪 How to Run
+
+### ▶ Backend (Flask)
 
 ```bash
-# In /backend
+cd backend
 python -m venv venv
 .\venv\Scripts\activate
-pip install -r requirements.txt
+pip install -r requirements.txt  # or install Flask, torch, torchvision, etc.
 python app.py
